@@ -1,7 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-import requests
+#import requests
 
 #url1 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl"
 #response = requests.get(url1)
