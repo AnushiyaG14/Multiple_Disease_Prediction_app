@@ -3,11 +3,13 @@ import pickle
 import numpy as np
 import os
 import base64
-
+path1='parkinson.pkl'
+path2='liver.pkl'
+path3='kidney.pkl'
 # Load the saved models
-parkinsons_model = pickle.load(open(r'parkinsons.pkl', 'rb'))
-liver_model = pickle.load(open(r'liver.pkl', 'rb'))
-kidney_model= pickle.load(open(r'kidney.pkl','rb'))
+parkinsons_model = pickle.load(open(r'path1', 'rb'))
+liver_model = pickle.load(open(r'path2', 'rb'))
+kidney_model= pickle.load(open(r'path3','rb'))
 st.image(r'predict_image.jpg',width=100 )
 
 st.title("Disease Prediction App")
