@@ -24,10 +24,13 @@ import numpy as np
 #else:
  #   raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 # Load the saved models
-parkinsons_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl', 'rb'))
-liver_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl', 'rb'))
-kidney_model= pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/kidney.pkl','rb'))
+#parkinsons_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl', 'rb'))
+#liver_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl', 'rb'))
+#kidney_model= pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/kidney.pkl','rb'))
 
+parkinsons_model = pickle.load(open('parkinsons.pkl', 'rb'))
+liver_model = pickle.load(open('liver.pkl', 'rb'))
+kidney_model= pickle.load(open('kidney.pkl','rb'))
 
 st.image('predict_image.jpg',width=100 )
 
