@@ -3,26 +3,26 @@ import pickle
 import numpy as np
 import requests
 
-url1 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl"
-response = requests.get(url1)
-if response.status_code == 200:
-    parkinsons_model = pickle.loads(response.content)
-else:
-    raise Exception(f"Failed to download the file. Status code: {response.status_code}")
+#url1 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl"
+#response = requests.get(url1)
+#if response.status_code == 200:
+ #   parkinsons_model = pickle.loads(response.content)
+#else:
+ #   raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 
-url2 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl"
-response = requests.get(url2)
-if response.status_code == 200:
-    liver_model = pickle.loads(response.content)
-else:
-    raise Exception(f"Failed to download the file. Status code: {response.status_code}")
+#url2 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl"
+#response = requests.get(url2)
+#if response.status_code == 200:
+ #   liver_model = pickle.loads(response.content)
+#else:
+ #   raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 
-url3 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/kidney.pkl"
-response = requests.get(url3)
-if response.status_code == 200:
-    kidney_model = pickle.loads(response.content)
-else:
-    raise Exception(f"Failed to download the file. Status code: {response.status_code}")
+#url3 = "https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/kidney.pkl"
+#response = requests.get(url3)
+#if response.status_code == 200:
+ #   kidney_model = pickle.loads(response.content)
+#else:
+ #   raise Exception(f"Failed to download the file. Status code: {response.status_code}")
 # Load the saved models
 parkinsons_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl', 'rb'))
 liver_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl', 'rb'))
