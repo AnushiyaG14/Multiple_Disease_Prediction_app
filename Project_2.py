@@ -2,14 +2,11 @@ import streamlit as st
 import pickle
 import numpy as np
 
-path1='parkinson.pkl'
-path2='liver.pkl'
-path3='kidney.pkl'
 # Load the saved models
-parkinsons_model = pickle.load(open(r'path1', 'rb'))
-liver_model = pickle.load(open(r'path2', 'rb'))
-kidney_model= pickle.load(open(r'path3','rb'))
-st.image(r'predict_image.jpg',width=100 )
+parkinsons_model = pickle.load(open('parkinson.pkl', 'rb'))
+liver_model = pickle.load(open('liver.pkl', 'rb'))
+kidney_model= pickle.load(open('kidney.pkl','rb'))
+st.image('predict_image.jpg',width=100 )
 
 st.title("Disease Prediction App")
 
