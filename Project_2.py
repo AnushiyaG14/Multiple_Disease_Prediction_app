@@ -2,10 +2,13 @@ import streamlit as st
 import pickle
 import numpy as np
 
+
 # Load the saved models
-parkinsons_model = pickle.load(open('https://github.com/AnushiyaG14/Multiple_Disease_Prediction_app/blob/main/parkinsons.pkl', 'rb'))
-liver_model = pickle.load(open('https://github.com/AnushiyaG14/Multiple_Disease_Prediction_app/blob/main/liver.pkl', 'rb'))
-kidney_model= pickle.load(open('https://github.com/AnushiyaG14/Multiple_Disease_Prediction_app/blob/main/kidney.pkl','rb'))
+parkinsons_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/parkinsons.pkl', 'rb'))
+liver_model = pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/liver.pkl', 'rb'))
+kidney_model= pickle.load(open('https://raw.githubusercontent.com/AnushiyaG14/Multiple_Disease_Prediction_app/refs/heads/main/kidney.pkl','rb'))
+
+
 st.image('predict_image.jpg',width=100 )
 
 st.title("Disease Prediction App")
