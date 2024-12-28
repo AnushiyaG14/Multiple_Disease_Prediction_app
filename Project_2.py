@@ -1,8 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-import os
-import base64
+
 path1='parkinson.pkl'
 path2='liver.pkl'
 path3='kidney.pkl'
