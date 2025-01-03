@@ -3,9 +3,9 @@ import pickle
 import numpy as np
 
 # Load the saved models
-parkinsons_model = pickle.load(open(r'D:\streamlit\env\Disease_prediction\parkinsons.pkl', 'rb'))
-liver_model = pickle.load(open(r'D:\streamlit\env\Disease_prediction\liver.pkl', 'rb'))
-kidney_model= pickle.load(open(r'D:\streamlit\env\Disease_prediction\kidney.pkl','rb'))
+parkinsons_model = pickle.load(open(r'parkinsons.pkl', 'rb'))
+liver_model = pickle.load(open(r'liver.pkl', 'rb'))
+kidney_model= pickle.load(open(r'kidney.pkl','rb'))
 st.image(r'D:\streamlit\env\Disease_prediction\predict_image.jpg',width=100 )
 
 
